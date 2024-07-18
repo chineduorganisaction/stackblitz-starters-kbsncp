@@ -33,4 +33,4 @@ const HomePageTemplate = () => {
   `
 }
 
-export default HomePageTemplate;
+module.exports = HomePageTemplate;

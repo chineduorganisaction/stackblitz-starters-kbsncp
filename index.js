@@ -1,6 +1,9 @@
-const app = require("express")
+const express = require("express")
 const cors = require("cors")
 const HomePageTemplate = require("./views/index.js")
+const FormTemplate = require("./views/input.js")
+
+const app = express()
 
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
@@ -22,15 +25,15 @@ app.get("/short-margin", (req, res) => {
 app.post("/long", (req, res) => {
   const {entry, profit, loss} = req.body
   const takeProfit = entry+(entry*(profit/100))
-  const stopLoss = entry-(entry*(profit/100))
-  res.send(`TP = ${takeProfit}\n SL = ${stopLoss}`)
+  const stopLoss = entry-(entry*(loss/100))
+  res.send(`TP = $${takeProfit}\n SL = $${stopLoss}`)
 })
 
 app.post("/short", (req, res) => {
   const {entry, profit, loss} = req.body
   const takeProfit = entry-(entry*(profit/100))
-  const stopLoss = entry+(entry*(profit/100))
-  res.send(`TP = ${takeProfit}\n SL = ${stopLossp}`)
+  const stopLoss = entry+(entry*(loss/100))
+  res.send(`TP = $${takeProfit}\n SL = $${stopLoss}`)
 })
 
 const port = 3000
