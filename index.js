@@ -1,12 +1,11 @@
 const express = require("express")
 const cors = require("cors")
-const HomePageTemplate = require("./views/index.js")
-const FormTemplate = require("./views/input.js")
+import HomePageTemplate from "./views/index.js"
+import FormTemplate from "./views/input.js"
 
 const app = express()
 
 app.use(express.urlencoded({extended: false}))
-app.use(express.json())
 app.use(cors())
 app.use(express.static("public"))
 

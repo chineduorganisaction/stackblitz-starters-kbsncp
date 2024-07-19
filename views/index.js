@@ -1,11 +1,16 @@
-const HomePageTemplate = () => {
+const HomePageTemplate = () => 
   `
+    <!DOCTYPE html>
     <html>
 
       <head>
 
         <title>Trade Margin</title>
-        <meta />
+        <script
+          src="https://unpkg.com/htmx.org@1.9.6"
+          integrity="sha384-FhXw7b6AlE/jyjlZH5iHa/tTe9EpJ1Y55RjcgPbjeWMskSxZt1v9qkxLJWNJaGni"
+          crossorigin="anonymous"
+        ></script>
 
       </head>
 
@@ -31,6 +36,5 @@ const HomePageTemplate = () => {
       
     </html>
   `
-}
 
-module.exports = HomePageTemplate;
+export default HomePageTemplate;
