@@ -1,5 +1,6 @@
-const FormTemplate = (e) => {
+const FormTemplate = (e) => 
     `
+      <!DOCTYPE html>
       <html>
 
         <head></head>
@@ -45,6 +46,5 @@ const FormTemplate = (e) => {
 
       </html>
     `
-}
 
-module.exports = FormTemplate
+export default FormTemplate;

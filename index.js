@@ -1,5 +1,5 @@
-const express = require("express")
-const cors = require("cors")
+import express from "express"
+import cors from "cors"
 import HomePageTemplate from "./views/index.js"
 import FormTemplate from "./views/input.js"
 
@@ -14,11 +14,11 @@ app.get("/", (req, res) => {
 })
 
 app.get("/long-margin", (req, res) => {
-  res.send(FormTemplate(long))
+  res.send(FormTemplate("long"))
 })
 
 app.get("/short-margin", (req, res) => {
-  res.send(FormTemplate(short))
+  res.send(FormTemplate("short"))
 })
 
 app.post("/long", (req, res) => {
