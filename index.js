@@ -38,13 +38,6 @@ app.post("/short", (req, res) => {
 
 const port = 3000
 
-app.listen(port, (res, err) => {
-  try{
-   res.send("connection established...")
-   console.log(`App listening on ${port}`)
-  }
-  catch{
-   res.send("Rejected connection,try again")
-   console.log(`Error occured at ${err}`)
-  }
+app.listen(port, () => {
+  console.log(`App listening on ${port}`)
 })
