@@ -15,7 +15,7 @@ const FormTemplate = (e) =>
 
           <form>
 
-            <ul>
+            <ul class="result">
 
               <li>
                 <labe>commodity price</label>
@@ -43,7 +43,7 @@ const FormTemplate = (e) =>
                 <span>%</span>
               </li>
 
-              <button hx-post="/${e}" hx-swap="afterend">submit</button>
+              <button hx-post="/${e}" hx-swap="afterend" hx-target=".result">submit</button>
             </ul>
 
           </form>
