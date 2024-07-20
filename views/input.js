@@ -14,16 +14,16 @@ const FormTemplate = (e) =>
               <li>
                 <labe>commodity price</label>
                 <input 
-                 type='text'
-                 name='entry'
+                 type="text"
+                 name="entry"
                 >
               </li>
 
               <li>
                 <label>Take Profit</label>
-                <input 
-                 type='text'
-                 name='profit'
+                <input
+                 type="text"
+                 name="profit"
                 >
                 <span>%</span>
               </li>
@@ -31,8 +31,8 @@ const FormTemplate = (e) =>
               <li>
                 <label>Stop Loss</label>
                 <input 
-                 type='text'
-                 name='loss'
+                 type="text"
+                 name="loss"
                 >
                 <span>%</span>
               </li>

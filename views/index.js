@@ -20,13 +20,13 @@ const HomePageTemplate = () =>
           <h1>TRADE MARGIN</h1>
         </div>
 
-        <div>
+        <div class="btn">
 
-          <button hx-get="/long-margin">
+          <button hx-get="/long-margin hx-swap=".btn">
             LONG
           </button>
 
-          <button hx-get="/short-margin">
+          <button hx-get="/short-margin hx-swap=".btn">
             SHORT
           </button>
 
