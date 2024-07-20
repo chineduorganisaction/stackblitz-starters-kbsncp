@@ -3,7 +3,13 @@ const FormTemplate = (e) =>
       <!DOCTYPE html>
       <html>
 
-        <head></head>
+        <head>
+          <script
+            src="https://unpkg.com/htmx.org@1.9.6"
+            integrity="sha384-FhXw7b6AlE/jyjlZH5iHa/tTe9EpJ1Y55RjcgPbjeWMskSxZt1v9qkxLJWNJaGni"
+            crossorigin="anonymous"
+          ></script>
+        </head>
 
         <body>
 
@@ -37,7 +43,7 @@ const FormTemplate = (e) =>
                 <span>%</span>
               </li>
 
-              <button hx-get='/${e}' hx-swap='afterend' hx-target='form'>submit</button>
+              <button hx-post="/${e}" hx-swap="afterend">submit</button>
             </ul>
 
           </form>
