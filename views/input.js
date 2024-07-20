@@ -16,15 +16,15 @@ const FormTemplate = (e) =>
                 <input 
                  type='text'
                  name='entry'
-                />
+                >
               </li>
 
               <li>
                 <label>Take Profit</label>
                 <input 
                  type='text'
-                 name=profit'
-                />
+                 name='profit'
+                >
                 <span>%</span>
               </li>
 
@@ -33,7 +33,7 @@ const FormTemplate = (e) =>
                 <input 
                  type='text'
                  name='loss'
-                />
+                >
                 <span>%</span>
               </li>
 
