@@ -22,11 +22,11 @@ const HomePageTemplate = () =>
 
         <div class="btn">
 
-          <button hx-get="/long-margin hx-swap=".btn">
+          <button hx-get="/long-margin hx-target=".btn">
             LONG
           </button>
 
-          <button hx-get="/short-margin hx-swap=".btn">
+          <button hx-get="/short-margin hx-target=".btn">
             SHORT
           </button>
 
